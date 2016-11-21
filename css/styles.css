@@ -1,0 +1,155 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/mac-bg.png") no-repeat bottom;
+    background-size: 1600px 393px;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 220px;
+    font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+}
+
+    .greatness {
+        height: 170px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #454545;
+        padding-left: 185px;
+        line-height: 170px;
+        background: url("../images/flag.png") no-repeat left 50%;
+    }
+
+    .vote {
+        text-align: center;
+    }
+
+        .chosen {
+            position: relative;
+        }
+
+        .chosen .name {
+            font-size: 48px;
+            font-weight: 400;
+            margin: 30px 0;
+            color: #454545;
+        }
+
+        .chosen.col-md-5.trump {
+            padding-left: 5px;
+            padding-right: 25px;
+        }
+        .chosen.col-md-5.clinton {
+            padding-left: 25px;
+            padding-right: 5px;
+        }
+
+        .chosen button[type="submit"] {
+            background: #ff8920;
+            border: none;
+            outline: none;
+            width: 320px;
+            height: 65px;
+            border-radius: 30px;
+            font-size: 36px;
+            font-weight: 400;
+            color: #fff;
+            letter-spacing: 4px;
+            -webkit-box-shadow: 0 5px 0 0 #bc600f;
+            -moz-box-shadow:    0 5px 0 0 #bc600f;
+            box-shadow:         0 5px 0 0 #bc600f;
+        }
+        .chosen button[type="submit"]:active {
+            background: #ff8920;
+            border: none;
+            outline: none;
+            -webkit-transform: translateY(4px);
+            -moz-transform: translateY(4px);
+            -o-transform: translateY(4px);
+            transform: translateY(4px);
+            -webkit-box-shadow: 0 1px 0 0 #bc600f;
+            -moz-box-shadow:    0 1px 0 0 #bc600f;
+            box-shadow:         0 1px 0 0 #bc600f;
+            margin: 0;
+            padding: 0;
+        }
+        .chosen button::-moz-focus-inner {
+            padding: 0;
+            border: 0
+        }
+
+        .chosen #put_trump {
+            position: fixed;
+            width: 158px;
+            height: 200px;
+            bottom: 50%;
+            left: -158px;
+            transform: translateY(50%);
+
+        }
+        .chosen #put_hillary {
+            position: fixed;
+            width: 158px;
+            height: 200px;
+            bottom: -200px;
+            right: 22.7%;
+        }
+
+
+    .versus .text {
+        font-size: 80px;
+        font-weight: 100;
+        color: #454545;
+    }
+
+    .versus #timer {
+        font-size: 18px;
+        margin-top: 120px;
+    }
+
+    /*Social icons styles*/
+
+    ul.share-buttons{
+        list-style: none;
+        padding: 0;
+    }
+
+    ul.share-buttons li{
+        display: inline;
+    }
+
+    ul.share-buttons .sr-only {
+        position: absolute;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    /*END*/
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+    .chosen .face img {
+        width: 300px;
+    }
+
+    .greatness {
+        height: 90px;
+        font-size: 17px;
+        font-weight: 400;
+        color: #454545;
+        padding-left: 80px;
+        line-height: 90px;
+        background: url("../images/flag.png") no-repeat left 50%;
+        background-size: 10%;
+    }
+}
